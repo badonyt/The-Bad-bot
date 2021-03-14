@@ -22,6 +22,8 @@ for(const file of commandFiles){
 client.once("ready", () => {
 console.log("The bot is ready!");    
 memberCounter(client);
+client.user.setActivity(`with ${prefix}rules & ${prefix}help & your gay`, { type: 'PLAYING' });
+
 
     
 
@@ -53,15 +55,17 @@ client.on("message", message => {
         client.commands.get("donate").execute(message, args);
     }else if (command === "play"){
         client.commands.get("play").execute(message, args);
-    }else if (command === "leave"){
-        client.commands.get("leave").execute(message, args);
     }else if (command === "verificate"){
         client.commands.get("verificate").execute(message, args);
     }else if (command === "clear"){
         client.commands.get("clear").execute(message, args);
-    }else if (command === "command"){
-        client.commands.get("command").execute(message, args, Discord);
+    }else if (command === "rules"){
+        client.commands.get("rules").execute(message, args, Discord);
+    }else if (command === "help"){
+        client.commands.get("help").execute(message, args, Discord);
+    }else if (command === "leave"){
+        client.commands.get("leave").execute(message, args)
     }
 });
 
-client.login("token bot");
+client.login("ODIwNjEzNzM4OTIyOTAxNTQ0.YE3uGQ.oHToJERhEf1xfH9iNf9y6cdBhp0");
