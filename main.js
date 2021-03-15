@@ -64,8 +64,10 @@ client.on("message", message => {
     }else if (command === "help"){
         client.commands.get("help").execute(message, args, Discord);
     }else if (command === "leave"){
-        client.commands.get("leave").execute(message, args)
+        client.commands.get("leave").execute(message, args);
+    }else if (command === "stfu"){
+        client.commands.get("stfu").execute(message, args, Discord);
     }
 });
 
-client.login("ODIwNjEzNzM4OTIyOTAxNTQ0.YE3uGQ.oHToJERhEf1xfH9iNf9y6cdBhp0");
+client.login("ODIwNzM4MjcwMzE2NDYyMDkw.YE5iFA.kyDv0j7hK5vA3j0C0xV5EOqFps0");
