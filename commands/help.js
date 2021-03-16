@@ -14,7 +14,8 @@ module.exports = {
             {name: "verificate", value: "verificate is to have the member role"},
             {name: "twitch", value: "twitch to know the owners twitch"},
             {name: "donate", value: "donate to donate(you dont need too)"},
-            {name: "Youtube", value: "Youtube is to show my youtube"}
+            {name: "Youtube", value: "Youtube is to show my youtube"},
+            {name: "afk", value: "set your status -afk an to stop being afk is -noafk"}
             )
         .setImage("https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697")
             .setFooter("this bot was made by Bad. Copyright 2021");

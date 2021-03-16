@@ -23,7 +23,7 @@ client.once("ready", () => {
 console.log("The bot is ready! ");  
 console.log(`Bot tag: ${client.user.tag}`);
 memberCounter(client);
-client.user.setActivity(`with ${prefix}rules & ${prefix}help & your gay`, { type: 'PLAYING' });
+client.user.setActivity(`with ${prefix}rules & ${prefix}help`, { type: 'PLAYING' });
 
 
     
@@ -70,7 +70,13 @@ client.on("message", message => {
         client.commands.get("games").execute(message, args, Discord);
     }else if (command === "stfu"){
         client.commands.get("stfu").execute(message, args, Discord);
+    }else if (command === "afk"){
+        client.commands.get("afk").execute(message, args);
+    }else if (command === "noafk"){
+        client.commands.get("noafk").execute(message, args);
+    }else if (command === "fatmom"){
+        client.commands.get("fatmom").execute(message, args);
     }
 });
 
-client.login("ODIxMTI1MTY5Mjk2MTc5MjIx.YE_KaA.jB-4juXu8x3_F4neCjQEmxtXxqo");
+client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.5RFjr8auqaaYGTrw3LptTMIajxs");
