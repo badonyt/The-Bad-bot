@@ -76,7 +76,17 @@ client.on("message", message => {
         client.commands.get("noafk").execute(message, args);
     }else if (command === "fatmom"){
         client.commands.get("fatmom").execute(message, args);
+    }else if (command === "givemod"){
+        client.commands.get("givemod").execute(message, args);
+    }else if (command === "remmod"){
+        client.commands.get("remod").execute(message, args);
+    }else if (command === "inspiration"){
+        client.commands.get("inspiration").execute(message, args, Discord);
+    }else if (command === "simping"){
+        client.commands.get("simping").execute(message, args, Discord);
     }
+        
+    
 });
 
-client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.5RFjr8auqaaYGTrw3LptTMIajxs");
+client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.hZxAiSk-3Xu1rLn_51SvV5k78Is");

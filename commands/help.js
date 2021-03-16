@@ -20,7 +20,8 @@ module.exports = {
         .setImage("https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697")
             .setFooter("this bot was made by Bad. Copyright 2021");
 
-            message.channel.send(newEmbed);
+            message.author.send(newEmbed);
+            message.channel.send("make sure Dms are open (:");
     }
 
 

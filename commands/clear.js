@@ -12,7 +12,10 @@ module.exports = {
             await message.channel.messages.fetch({limit: 0[0]}).then(messages =>{
     
                 message.channel.bulkDelete(messages);
+                message.channel.send("make sure Dms are open (:");
+                message.author.send("you deleted a lot of messages! just saying");
             })
+
         } else {
             message.channel.send("you dont have the right permission for that action");
         }

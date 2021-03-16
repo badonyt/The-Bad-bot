@@ -1,6 +1,6 @@
 module.exports = {
-    name:"command",
-    description: "helo",
+    name:"rules",
+    description: "rules",
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor("#8594B4")
@@ -19,7 +19,8 @@ module.exports = {
         .setImage("https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697")
             .setFooter("And please make sure you match the community guidelines https://discord.com/guidelines");
 
-            message.channel.send(newEmbed);
+            message.author.send(newEmbed);
+            message.channel.send("check dms (:")
     }
 
 
