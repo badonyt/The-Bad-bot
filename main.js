@@ -84,9 +84,11 @@ client.on("message", message => {
         client.commands.get("inspiration").execute(message, args, Discord);
     }else if (command === "simping"){
         client.commands.get("simping").execute(message, args, Discord);
+    }else if (command === "thx"){
+        client.commands.get("thx").execute(message, args);
     }
         
     
 });
 
-client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.hZxAiSk-3Xu1rLn_51SvV5k78Is");
+client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.TeeWmvvdZR41fLvtIl5XIldCig0");
