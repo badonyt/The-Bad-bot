@@ -8,6 +8,9 @@ const fs = require("fs");
 
 
 
+
+
+
 const memberCounter = require("./counters/member-counter");
 
 client.commands = new Discord.Collection();
@@ -86,9 +89,11 @@ client.on("message", message => {
         client.commands.get("simping").execute(message, args, Discord);
     }else if (command === "thx"){
         client.commands.get("thx").execute(message, args);
+    }else if (command === "avatar"){
+        client.commands.get("avatar").execute(message, args)
     }
         
     
 });
 
-client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.TeeWmvvdZR41fLvtIl5XIldCig0");
+client.login("ODIxMzIyODI1MjY3OTM3MzEx.YFCCfA.AHIVt6UnRXzLE80YTcFdVZbzUZs");
