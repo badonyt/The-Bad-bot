@@ -9,9 +9,9 @@ module.exports = {
         .setDescription("This is the rules for our server")
         .addFields(
            
-            {name: "Battle.net", value: "Don't throw unnecessary insults. Be respectful of people in this server."},
+            {name: "Battle.net", value: "bad"},
             {name: "Rockstar", value: "Badlovespizza"},
-            {name: "Epic games", value: "Copitofan74 the smily thingy"},
+            {name: "Epic games", value: "Badlikespizza"},
             {name: "Minecraft", value: " badlikespizza"},
             {name: "steam", value: "badplaysfn"}
             )
