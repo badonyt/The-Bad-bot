@@ -114,4 +114,4 @@ bot.on("message", message => {
 
 
 
-bot.login(put code here lol);
+bot.login("code here");
