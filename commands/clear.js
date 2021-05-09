@@ -13,6 +13,7 @@ module.exports = {
     
                 message.channel.bulkDelete(messages);
                 message.channel.send("make sure Dms are open (:");
+                message.channel.send("if the messages are 14 days old it will not work");
                 message.author.send("you deleted a lot of messages! just saying");
             })
 

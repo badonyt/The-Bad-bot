@@ -4,13 +4,12 @@ module.exports = {
     execute(message, args, Discord) {
         const newEmbed = new Discord.MessageEmbed()
         .setColor("#8594B4")
-        .setTitle("Help")
+        .setTitle("Help / Commands")
         .setURL("https://youtube.com/Badisnotfunny")
-        .setDescription("If you need help please read all the commands :100:")
+        .setDescription("If you need help please read all the commands :100:, theres more commands but you have to find out")
         .addFields(
            
             {name: "clear", value: "clear command is to clear messages"},
-            {name: "play", value: "play music to play the music and then leave to leave"},
             {name: "verificate", value: "verificate is to have the member role"},
             {name: "twitch", value: "twitch to know the owners twitch"},
             {name: "donate", value: "donate to donate(you dont need too)"},

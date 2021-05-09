@@ -16,7 +16,7 @@ module.exports = {
             {name: "Rule 5", value: "Use channels properly."},
             {name: "Rule 6", value: "No advertising.(Except on the Self Promote channel"}
             )
-        .setImage("https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697")
+            .setImage("https://static.toiimg.com/photo/msid-67586673/67586673.jpg?3918697")
             .setFooter("And please make sure you match the community guidelines https://discord.com/guidelines");
 
             message.author.send(newEmbed);

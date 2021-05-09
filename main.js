@@ -62,18 +62,14 @@ bot.on("message", message => {
         bot.commands.get("twitch").execute(message, args);
     }else if(command === "donate"){
         bot.commands.get("donate").execute(message, args);
-    }else if (command === "play"){
-        bot.commands.get("play").execute(message, args);
-    }else if (command === "verificate"){
+    }else if (command === "verificate" || command === "verify" || command === "verification"){
         bot.commands.get("verificate").execute(message, args);
     }else if (command === "clear"){
         bot.commands.get("clear").execute(message, args);
-    }else if (command === "rules"){
+    }else if (command === "rules" || command === "rule"){
         bot.commands.get("rules").execute(message, args, Discord);
-    }else if (command === "help"){
+    }else if (command === "help" || command === "command" || command === "commands" || command === "needcommands" || command === "secrettoaccesscommands"){
         bot.commands.get("help").execute(message, args, Discord);
-    }else if (command === "leave"){
-        bot.commands.get("leave").execute(message, args);
     }else if (command === "games"){
         bot.commands.get("games").execute(message, args, Discord);
     }else if (command === "stfu"){
@@ -85,23 +81,29 @@ bot.on("message", message => {
     }else if (command === "fatmom"){
         bot.commands.get("fatmom").execute(message, args);
     }else if (command === "givemod"){
-        bot.commands.get("givemod").execute(message, args);
+        bot.commands.get("givemod").execute(message, args); 
     }else if (command === "remmod"){
         bot.commands.get("remod").execute(message, args);
     }else if (command === "inspiration"){
         bot.commands.get("inspiration").execute(message, args, Discord);
     }else if (command === "simping"){
         bot.commands.get("simping").execute(message, args, Discord);
-    }else if (command === "thx"){
+    }else if (command === "thx" || command === "thanks"){
         bot.commands.get("thx").execute(message, args);
-    }else if (command === "avatar"){
+    }else if (command === "avatar" || command === "avatars"){
         bot.commands.get("avatar").execute(message, args);
     }else if (command === "lol"){
         bot.commands.get("lol").execute(message, args);
     }else if (command === "bruh"){
         bot.commands.get("bruh").execute(message, args);
-    }else if (command === "ping"){
+    }else if (command === "ping" || command === "stats"){
         bot.commands.get("ping").execute(message, args, bot);
+    }else if (command === ""){
+        bot.commands.get("typepls").execute(message, args);
+    }else if (command === "please" || command === "ibeg"){
+        bot.commands.get("no").execute(message, args);
+    }else if (command === "twittersecret"){
+        bot.commands.get("twittersecret").execute(message, args)
     }
         
     
@@ -114,4 +116,4 @@ bot.on("message", message => {
 
 
 
-bot.login("code here");
+bot.login("code lol");
