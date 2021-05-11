@@ -10,7 +10,7 @@ bot.db = require("quick.db");
 
 bot.request = new (require("rss-parser"))();
 
-
+const randomPuppy = require('random-puppy')
 
 
 
@@ -49,6 +49,23 @@ bot.on("guildMemberRemove", member => {
     const notChannel = member.guild.channels.cache.find(channel => channel.name === 'bye');
     notChannel.send (`Goodbye! ${member} next time please tell us what did we did worng in this  :slight_frown: `)
 })
+
+bot.on('message', async message =>{
+    if (message.content === "-meme"){
+        const subReddits = ["dankmeme", "meme", "memes"]
+        const random = subReddits[Math.floor(Math.random() * subReddits.length)]
+
+        const img = await randomPuppy(random);
+        const embed = new Discord.MessageEmbed()
+        .setColor("RANDOM")
+        .setImage(img)
+        .setTitle(`From /r/${random}`)
+        .setURL(`https://reddit.com/r/${random}`)
+        message.channel.send(embed)
+    }
+
+});
+
 
 bot.on("message", message => {
     if(!message.content.startsWith(prefix) || message.author.bot) return;
@@ -103,7 +120,11 @@ bot.on("message", message => {
     }else if (command === "please" || command === "ibeg"){
         bot.commands.get("no").execute(message, args);
     }else if (command === "twittersecret"){
-        bot.commands.get("twittersecret").execute(message, args)
+        bot.commands.get("twittersecret").execute(message, args);
+    }else if (command === "create"){
+        bot.commands.get("create").execute(message, args);
+    }else if (command === "delete"){
+        bot.commands.get("delete").execute(message, args);
     }
         
     
