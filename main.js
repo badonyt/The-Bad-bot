@@ -125,6 +125,10 @@ bot.on("message", message => {
         bot.commands.get("create").execute(message, args);
     }else if (command === "delete"){
         bot.commands.get("delete").execute(message, args);
+    }else if (command === "server"){
+        bot.commands.get("server").execute(message, args);
+    }else if (command === "user"){
+        bot.commands.get("user").execute(message, args);
     }
         
     
